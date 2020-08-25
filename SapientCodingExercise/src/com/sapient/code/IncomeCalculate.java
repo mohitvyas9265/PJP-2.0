@@ -19,13 +19,9 @@ public class IncomeCalculate
 	//country A/Male/per capita
 	//country A/Female/per capita
 	//write into file
-	@Deprecated
-	public void abc()
-	{
-		
-	}
 	Map<String,Float> mp = new HashMap<>();
 	Map<String,Integer> count = new HashMap<>();
+	String str;
 	public void loadConvert(String str) throws IOException
 	{
 		BufferedReader csvReader = new BufferedReader(new FileReader(str));
@@ -103,8 +99,9 @@ public class IncomeCalculate
 		}
 		csvReader.close();
 	}
-	public void print(String str)
+	public boolean print(String str)
 	{
+		
 		try (PrintWriter writer = new PrintWriter(new File(str))) 
 		{
 			writer.print("");
@@ -112,7 +109,6 @@ public class IncomeCalculate
 		      StringBuilder sb = new StringBuilder();
 		      for(Map.Entry<String,Float> it : mp.entrySet())
 		      {
-		    	  System.out.println("Hi");
 		    	  String key=it.getKey();
 		    	  Float amount =it.getValue();
 		    	  sb.append(key);
@@ -121,16 +117,20 @@ public class IncomeCalculate
 		    	  sb.append('\n');
 		    	  writer.write(sb.toString());
 		    	  
+		    	  
 		      }    
+		      return true;
 		      
 		      
 
 		 } 
 		catch (FileNotFoundException e) 
 		{
+			
 		      System.out.println(e.getMessage());
+		      return false;
 		}
 	}
-
+	
 
 }

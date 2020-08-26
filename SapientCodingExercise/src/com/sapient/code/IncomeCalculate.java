@@ -115,10 +115,11 @@ public class IncomeCalculate
 		    	  sb.append(",");
 		    	  sb.append(amount);
 		    	  sb.append('\n');
-		    	  writer.write(sb.toString());
 		    	  
 		    	  
-		      }    
+		    	  
+		      }
+		      writer.write(sb.toString());
 		      return true;
 		      
 		      

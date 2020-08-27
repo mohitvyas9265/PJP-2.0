@@ -7,7 +7,6 @@
 <title>Date Time Calculator</title>
 </head>
 <body>
-	<h2> Hello ${name}!</h2>
 	<h2> Select the function</h2>
 	<h3> To Add, Subtract between two dates and express the output in days, dates, 
 weeks, months:</h3>

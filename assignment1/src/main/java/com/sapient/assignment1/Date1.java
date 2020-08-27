@@ -51,7 +51,8 @@ public class Date1
 		System.out.println(ms);
 		Date d2=new Date(ms);
 		String date=sdf.format(d2);
-		return date;
+		String str=date;
+		return str;
 		
 		
 	}
@@ -66,6 +67,7 @@ public class Date1
 		ms-=cnt;
 		Date d2=new Date(ms);
 		String date=sdf.format(d2);
+		System.out.println(date);
 		return date;
 		
 		
@@ -105,18 +107,22 @@ public class Date1
 			days+=daysOfMonth[i];
 		}
 		days+=d;
-		return((days/7)+1);
+		if(days%7==0)
+			return (days/7);
+		else
+			return((days/7)+1);
 		
 	}
 	
 	public static void main(String[] args) throws ParseException 
 	{
 		Date1 ob = new Date1();
+		//ob.substractDays("16-10-1998", 1,0,0);
 		//ob.addDate("01-02-0001", "12-01-0001");
 		//ob.substractDate("01-02-0001", "31-01-0001");
-		ob.addDays("16-10-1998", 0, 0, 1);
-		System.out.println(ob.dayOfWeek("28-08-2020"));
-		System.out.println(ob.weekNumber("28-01-2020"));
+		//ob.addDays("16-10-1998", 0, 0, 1);
+		//System.out.println(ob.dayOfWeek("28-08-2020"));
+		//System.out.println(ob.weekNumber("28-01-2020"));
 		
 	}
 

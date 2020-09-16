@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+    <HEAD>
+        <TITLE>Calculator</TITLE>
+    </HEAD>
+    <BODY>
+        <form method="post">
+            <input type="text" name="date1" placeholder="DD-MM-YYYY" />
+            <input type="text" name="date2" placeholder="DD-MM-YYYY" />
+            <input type="radio" id="diff" name="operator" value="diff">
+            <label for="diff">Difference</label><br>
+            <input type="radio" id="add" name="operator" value="add">
+            <label for="diff">Adds</label><br>
+            <button type="submit" name="submit">Calculate</button>
+        </form>
+        <div><%- calculate %></div>
+    </BODY>
+</HTML>

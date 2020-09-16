@@ -1,0 +1,15 @@
+FROM node:current-slim
+
+MAINTAINER mohit vyas<mohit.vyas@publicissapient.com>
+
+WORKDIR /
+
+COPY package.json .
+
+RUN npm install
+
+EXPOSE 3000
+
+CMD [ "npm", "start" ]
+
+COPY . .

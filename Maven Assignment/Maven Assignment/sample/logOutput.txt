@@ -1,0 +1,34 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< com.sapient:sample >-------------------------
+[INFO] Building sample 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-war-plugin:3.3.1:help (default-cli) @ sample ---
+[INFO] Apache Maven WAR Plugin 3.3.1
+  Builds a Web Application Archive (WAR) file from the project output and its
+  dependencies.
+
+This plugin has 4 goals:
+
+war:exploded
+  Create an exploded webapp in a specified directory.
+
+war:help
+  Display help information on maven-war-plugin.
+  Call mvn war:help -Ddetail=true -Dgoal=<goal-name> to display parameter
+  details.
+
+war:inplace
+  Generate the webapp in the WAR source directory.
+
+war:war
+  Build a WAR file.
+
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.167 s
+[INFO] Finished at: 2020-08-24T12:18:34+05:45
+[INFO] ------------------------------------------------------------------------
